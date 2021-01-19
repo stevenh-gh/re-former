@@ -1,3 +1,7 @@
+<%@user.errors.full_messages.each do |m|%>
+  <%=m%><br>
+<%end%>
+
 <%=form_for @user do |f|%>
   Username: <%=f.text_field :username%><br>
   Email   : <%=f.text_field :email, placeholder: 'example@email.com'%><br>
